@@ -4,29 +4,24 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - MyResume Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Trystan Adrian - Portfolio</title> {/* Judul Halaman Diperbarui */}
+  <meta content="Personal portfolio of Trystan Adrian showcasing skills in cybersecurity, development, and professional certifications." name="description">
+  <meta content="Trystan Adrian, Cybersecurity, Portfolio, Certifications, Projects" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
 <body class="index-page">
@@ -39,10 +34,9 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#projects"><i class="bi bi-file-earmark-text navicon"></i><span>Projects</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <li><a href="#projects"><i class="bi bi-kanban navicon"></i><span>Projects</span></a></li> {/* Ikon & Teks Disesuaikan */}
+        <li><a href="#portfolio"><i class="bi bi-patch-check-fill navicon"></i><span>Certifications</span></a></li> {/* Link ke #portfolio, ikon & teks disesuaikan */}
+        <li><a href="#badges"><i class="bi bi-award navicon"></i><span>Badges</span></a></li> {/* Link #services diubah jadi #badges */}
       </ul>
     </nav>
 
@@ -50,7 +44,6 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
       <img src="assets/img/hero-bg.jpg" alt="">
@@ -61,8 +54,8 @@
             <h2>Trystan Adrian</h2>
             <p>I'm <span class="typed" data-typed-items="Learner, Cybersecurity Enthusiast">Learner</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="mailto:trystanadrian96@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a href="https://medium.com/@trystanadrian"><i class="bi bi-medium"></i></a>
               <a href="https://www.instagram.com/trystanahw/"><i class="bi bi-instagram"></i></a>
               <a href="https://www.linkedin.com/in/trystanahw/"><i class="bi bi-linkedin"></i></a>
             </div>
@@ -70,12 +63,8 @@
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section><section id="about" class="about section">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
       </div>
@@ -90,7 +79,9 @@
 
             <div class="main-interest-container mt-4">
               <h4 class="mb-3">Main Interest:</h4>
-              <div class="d-flex flex-wrap align-items-center justify-content-start"> <ul class="list-inline mb-2 mb-md-0 me-md-4"> <li class="list-inline-item me-3 me-lg-4"><i class="bi bi-shield-lock-fill text-primary"></i> Cybersecurity Enterprise</li>
+              <div class="d-flex flex-wrap align-items-center justify-content-start">
+                <ul class="list-inline mb-2 mb-md-0 me-md-4">
+                  <li class="list-inline-item me-3 me-lg-4"><i class="bi bi-shield-lock-fill text-primary"></i> Cybersecurity Enterprise</li>
                   <li class="list-inline-item me-3 me-lg-4"><i class="bi bi-bug-fill text-primary"></i> Pentest & Bug Hunting</li>
                   <li class="list-inline-item me-3 me-lg-4"><i class="bi bi-code-slash text-primary"></i> Web Development & Security</li>
                 </ul>
@@ -112,44 +103,38 @@
         </div>
       </div>
 
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
+    </section><section id="stats" class="stats section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
 
           <div class="col-lg-4 col-md-6 col-4 d-flex flex-column align-items-center">
             <i class="bi bi-trophy-fill"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
               <p>Achievement</p>
             </div>
-          </div><div class="col-lg-4 col-md-6 col-4 d-flex flex-column align-items-center">
+          </div>
+          <div class="col-lg-4 col-md-6 col-4 d-flex flex-column align-items-center">
             <i class="bi bi-patch-check-fill"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
               <p>Certification</p>
             </div>
-          </div><div class="col-lg-4 col-md-6 col-4 d-flex flex-column align-items-center">
+          </div>
+          <div class="col-lg-4 col-md-6 col-4 d-flex flex-column align-items-center">
             <i class="bi bi-bookmark-star-fill"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1" class="purecounter"></span>
               <p>Badge</p>
             </div>
-          </div></div>
-
+          </div>
+        </div>
       </div>
-
-     <!--Projects Section -->
-    <section id="projects" class="projects section">
-
+    </section><section id="projects" class="projects section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Writings & Projects</h2>
-
-      </div><div class="container">
+      </div>
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -183,7 +168,7 @@
               <p class="panel-description">
                 Explore various open-source projects, contributions, and code experiments that I work on and share via the GitHub platform.
               </p>
-             <div class="mt-auto pt-3 d-flex flex-wrap align-items-center">
+              <div class="mt-auto pt-3 d-flex flex-wrap align-items-center">
                 <a href="https://github.com/trystanadrian" class="btn btn-custom-action mb-2" target="_blank" rel="noopener noreferrer">
                   Visit My Github <i class="bi bi-github"></i>
                 </a>
@@ -193,11 +178,7 @@
 
         </div>
       </div>
-
-    </section><!-- /Projects Section -->
-
-    <!-- Portfolio Section -->
-    <section id="certifications-showcase" class="certifications-slider-section section">
+    </section><section id="portfolio" class="certifications-slider-section section"> {/* ID diubah kembali ke "portfolio" agar link navigasi bekerja */}
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
       </div>
@@ -208,7 +189,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\ftia.png" alt="Foundation Level Threat intelligence Analyst Badge">
+                  <img src="assets/img/portof/ftia.png" alt="Foundation Level Threat intelligence Analyst Badge">
                 </div>
                 <div class="certification-details">
                   <h4>Foundation Level Threat intelligence Analyst</h4>
@@ -220,7 +201,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\27001.png" alt="ISO/IEC 27001:2022 Information Security Associate Badge">
+                  <img src="assets/img/portof/27001.png" alt="ISO/IEC 27001:2022 Information Security Associate Badge">
                 </div>
                 <div class="certification-details">
                   <h4>ISO/IEC 27001:2022 Information Security Associate</h4>
@@ -232,7 +213,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\cnsp.png" alt="Certified Network Security Practitioner (CNSP) with Merit Badge">
+                  <img src="assets/img/portof/cnsp.png" alt="Certified Network Security Practitioner (CNSP) with Merit Badge">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Network Security Practitioner (CNSP) with Merit</h4>
@@ -240,186 +221,107 @@
                 </div>
               </div>
             </div>
-
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\ccp.png" alt="AWS Certified Cloud Practitioner (AWS-CCP) Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>AWS Certified Cloud Practitioner (AWS-CCP)</h4>
-                  <p>Issued by Amazon Web Services (AWS) · Jun 2024 (Expires Jun 2027) · Credential ID: 4147b5cfa5424192a222f0497f19a8c0</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\c3sa.png" alt="Certified Cyber Security Analyst (C3SA) Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>Certified Cyber Security Analyst (C3SA)</h4>
-                  <p>Issued by CyberWarFare Labs · Jul 2024 · Credential ID: c1c979f4</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\oracle2.png" alt="Oracle Guided Learning Content Developer Certified Foundations Associate Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>Oracle Guided Learning Content Developer Certified Foundations Associate - Rel 2</h4>
-                  <p>Issued by Oracle · Feb 2025 · Credential ID: 101247147OCAOGLDFREL2</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\casf.png" alt="Certified Associate in Scrum Fundamentals (CASF) Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>Certified Associate in Scrum Fundamentals (CASF)</h4>
-                  <p>Issued by SkillFront · Feb 2025 · Credential ID: 44664570778941</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\apisec.png" alt="APIsec Certified Practitioner Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>APIsec Certified Practitioner</h4>
-                  <p>Issued by APIsec University · Apr 2025 · Credential ID: 4b554b07-1510-4858-bb88-d6a5bb1688be</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="certification-slide-item">
-                <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\cap.png" alt="Certified AppSec Practitioner v2 (CAP) with Merit Badge">
-                </div>
-                <div class="certification-details">
-                  <h4>Certified AppSec Practitioner v2 (CAP) with Merit</h4>
-                  <p>Issued by The SecOps Group · May 2025 · Credential ID: 10032730</p>
-                </div>
-              </div>
-            </div>
             
             </div>
           <div class="swiper-pagination"></div>
+          
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
         </div>
-
-      </div>
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
+        
+        </div>
+    </section><section id="badges" class="services section"> {/* ID diubah dari "services" menjadi "badges" */}
       <div class="container section-title" data-aos="fade-up">
         <h2>Badges</h2>
-      </div><div class="container">
+      </div>
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\apisec.png" class="certification-badge-img" alt="APISec Certified Practitioner Badge">
+                <img src="assets/img/badge/apisec.png" class="certification-badge-img" alt="APISec Certified Practitioner Badge">
               </div>
               <h4>APISec Certified Practitioner</h4>
-              <p class="fst-italic">
-              </p>
+              <p class="fst-italic"></p>
             </div>
-          </div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\lfd.png" class="certification-badge-img" alt="LFD121 Developing Secure Software Badge">
+                <img src="assets/img/badge/lfd.png" class="certification-badge-img" alt="LFD121 Developing Secure Software Badge">
               </div>
               <h4>LFD121: Developing Secure Software</h4>
-              <p class="fst-italic">
-              </p>
+              <p class="fst-italic"></p>
             </div>
-          </div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\icip.png" class="certification-badge-img" alt="OPSWAT ICIP Badge">
+                <img src="assets/img/badge/icip.png" class="certification-badge-img" alt="OPSWAT ICIP Badge">
               </div>
               <h4>OPSWAT Introduction to Critical Infrastructure Protection (ICIP)</h4>
-              <p class="fst-italic">
-              </p>
+              <p class="fst-italic"></p>
             </div>
-          </div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\fcf.png" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity Badge">
+                <img src="assets/img/badge/fcf.png" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity Badge">
               </div>
               <h4>Fortinet Certified Fundamentals Cybersecurity</h4>
-              <p class="fst-italic">
-              </p>
+              <p class="fst-italic"></p>
             </div>
-          </div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="certification-item text-center">
-               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\capc.png" class="certification-badge-img" alt="CAPC Badge">
-              </div>
-              <h4>Cybersecurity Awareness Professional Certification - CAPC</h4>
-              <p class="fst-italic">
-              </p>
-            </div>
-          </div><div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets\img\badge\ccp.png" class="certification-badge-img" alt="AWS Certified Cloud Practitioner Badge">
+                <img src="assets/img/badge/capc.png" class="certification-badge-img" alt="CAPC Badge">
+              </div>
+              <h4>Cybersecurity Awareness Professional Certification - CAPC</h4>
+              <p class="fst-italic"></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="certification-item text-center">
+              <div class="certification-badge-img-wrapper">
+                <img src="assets/img/badge/ccp.png" class="certification-badge-img" alt="AWS Certified Cloud Practitioner Badge">
               </div>
               <h4>AWS Certified Cloud Practitioner</h4>
-              <p class="fst-italic">
-              </p>
+              <p class="fst-italic"></p>
             </div>
-          </div></div>
+          </div>
+        </div>
 
         <div class="text-center mt-5 pt-3">
           <a href="https://www.credly.com/users/trystanahw/badges" class="btn btn-primary btn-lg btn-view-all-credly" target="_blank" rel="noopener noreferrer">
-           View All Badges<i class="bi bi-box-arrow-up-right"></i>
+            View All Badges<i class="bi bi-box-arrow-up-right"></i>
           </a>
         </div>
 
       </div>
-    </section><!-- /Services Section -->
-
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <h3 class="sitename">Trystan Adrian</h3>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/trystanahw/"><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
+        <a href="https://www.credly.com/users/trystanahw/"><i class="bi bi-c-circle-fill"></i></a>
+        <a href="https://github.com/trystanadrian"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/trystanahw/"><i class="bi bi-instagram"></i></a>
+        <a href="https://medium.com/@trystanadrian"><i class="bi bi-medium"></i></a>
         <a href="https://www.linkedin.com/in/trystanahw/"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <strong class="px-1 sitename">2025</strong> <span>All Rights Reserved</span>
-        </div>
+      <div class="copyright">
+        <strong class="px-1 sitename">2025</strong> <span>All Rights Reserved</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -431,7 +333,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
