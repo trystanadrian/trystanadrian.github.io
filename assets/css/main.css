@@ -1718,10 +1718,10 @@ section,
 .certification-slide-item {
   background-color: var(--surface-color);
   border-radius: 10px;
-  padding: 20px 10px; /* Padding horizontal dikurangi agar gambar bisa lebih lebar */
+  padding: 20px 10px 25px 10px; /* Atur padding bawah (misal: 25px) untuk memberi ruang ke pagination */
   text-align: center;
   box-shadow: 0 4px 15px rgba(var(--default-color-rgb), 0.08);
-  height: auto; /* Tinggi menyesuaikan konten */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1729,10 +1729,10 @@ section,
 
 /* Wrapper gambar sertifikat */
 .certification-image-wrapper {
-  width: 95%;     /* Gambar mengambil hampir seluruh lebar slide untuk tampilan lebih besar */
-  max-width: 700px; /* Lebar maksimum gambar sertifikat agar lebih dominan, sesuaikan */
+  width: 95%;
+  max-width: 700px;
+  height: auto; /* Biarkan tinggi menyesuaikan gambar secara otomatis */
   margin-bottom: 15px; /* Jarak dari gambar ke detail di bawahnya */
-  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1749,11 +1749,10 @@ section,
 
 /* Detail Sertifikasi */
 .certification-details {
-  width: 90%; /* Lebar area detail relatif terhadap parent */
-  max-width: 680px; /* Batasi lebar maksimum teks agar tetap terbaca di bawah gambar besar */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px; /* Jarak dari gambar ke teks detail */
+  width: 90%;
+  max-width: 680px;
+  margin-top: auto; /* Mendorong detail ke bawah, mengisi ruang yang tersedia */
+  padding-top: 15px; /* Memberi jarak dari gambar di atasnya */
 }
 
 .certification-details h4 {
@@ -1768,24 +1767,21 @@ section,
 }
 
 .certification-details p {
-  font-size: 0.75rem; /* Ukuran font deskripsi dikecilkan */
-  line-height: 1.45;
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: var(--default-color);
-  margin-bottom: 0; /* Hapus margin bawah jika ini elemen terakhir sebelum pagination */
-  white-space: normal;  /* Biarkan deskripsi wrap ke beberapa baris */
-  overflow: visible;     /* Hapus pemotongan teks */
-  text-overflow: clip;   /* Hapus pemotongan teks */
+  margin-bottom: 0; /* Pastikan tidak ada margin bawah tambahan */
 }
 
 /* Kontainer Swiper dan Pagination */
 .certifications-swiper {
-  padding-bottom: 20px; /* Jarak bawah untuk pagination dikurangi */
+  padding-bottom: 30px; /* Jarak bawah untuk pagination dikurangi */
 }
 
 .certifications-swiper .swiper-pagination {
   /* Anda bisa mengatur posisi pagination lebih spesifik jika perlu */
   /* position: relative; */
-  /* bottom: 5px; */ /* Contoh jika ingin lebih dekat ke bawah */
+  bottom: 0px; */ /* Contoh jika ingin lebih dekat ke bawah */
 }
 
 .certifications-swiper .swiper-pagination-bullet {
