@@ -1731,8 +1731,8 @@ section,
 .certification-image-wrapper {
   width: 95%;     /* Gambar mengambil hampir seluruh lebar slide untuk tampilan lebih besar */
   max-width: 700px; /* Lebar maksimum gambar sertifikat agar lebih dominan, sesuaikan */
-  min-height: 350px; /* Tinggi minimum yang proporsional untuk gambar besar, sesuaikan */
   margin-bottom: 15px; /* Jarak dari gambar ke detail di bawahnya */
+  height: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
