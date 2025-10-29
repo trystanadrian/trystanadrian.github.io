@@ -14,28 +14,37 @@
   <meta property="og:description" content="Cybersecurity enthusiast specializing in penetration testing and bug hunting">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourwebsite.com">
-  <meta property="og:image" content="https://yourwebsite.com/assets/img/profile-img.jpg">
+  <meta property="og:image" content="https://yourwebsite.com/assets/img/profile-img.webp">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Trystan Adrian - Cybersecurity Portfolio">
   <meta name="twitter:description" content="Cybersecurity enthusiast specializing in penetration testing and bug hunting">
-  <meta name="twitter:image" content="https://yourwebsite.com/assets/img/profile-img.jpg">
+  <meta name="twitter:image" content="https://yourwebsite.com/assets/img/profile-img.webp">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Preconnect to Google Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Optimized Font Loading - Only necessary weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Critical CSS - Load immediately -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Non-Critical CSS - Deferred loading -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Preload Hero Image for faster LCP -->
+  <link rel="preload" as="image" href="assets/img/hero-bg.webp" type="image/webp">
 </head>
 
 <body class="index-page">
@@ -58,9 +67,10 @@
 
   <main class="main">
 
+    <!-- Hero Section - Priority Loading -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="Hero background pattern" loading="lazy">
+      <img src="assets/img/hero-bg.webp" alt="Hero background pattern" loading="eager" fetchpriority="high">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
@@ -79,6 +89,7 @@
 
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about section">
 
       <div class="container section-title" data-aos="fade-up">
@@ -110,10 +121,11 @@
           </div>
           <div class="col-lg-5 order-lg-2 text-center">
             <div id="about-image-slideshow" class="about-image-slideshow">
-              <img src="assets/img/profile-img.jpg" class="img-fluid active" alt="Trystan Adrian profile photo" loading="lazy">
-              <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="Trystan Adrian professional photo" loading="lazy">
-              <img src="assets/img/profile-img-3.jpg" class="img-fluid" alt="Trystan Adrian portrait" loading="lazy">
-              <img src="assets/img/profile-img-4.jpg" class="img-fluid" alt="Trystan Adrian casual photo" loading="lazy">
+              <!-- First image loads normally, others lazy load -->
+              <img src="assets/img/profile-img.webp" class="img-fluid active" alt="Trystan Adrian profile photo" loading="eager">
+              <img src="assets/img/profile-img-2.webp" class="img-fluid" alt="Trystan Adrian professional photo" loading="lazy">
+              <img src="assets/img/profile-img-3.webp" class="img-fluid" alt="Trystan Adrian portrait" loading="lazy">
+              <img src="assets/img/profile-img-4.webp" class="img-fluid" alt="Trystan Adrian casual photo" loading="lazy">
             </div>
           </div>
         </div>
@@ -121,6 +133,7 @@
 
     </section>
 
+    <!-- Stats Section -->
     <section id="stats" class="stats section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
@@ -150,6 +163,7 @@
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Writings & Projects</h2>
@@ -200,6 +214,7 @@
       </div>
     </section>
 
+    <!-- Portfolio/Certifications Section -->
     <section id="portfolio" class="certifications-slider-section section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
@@ -211,7 +226,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/nasa.png" alt="NASA Hall of Fame certificate" loading="lazy">
+                  <img src="assets/img/portof/nasa.webp" alt="NASA Hall of Fame certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>National Aeronautics and Space Administration (NASA) Hall of Fame</h4>
@@ -223,7 +238,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/ftia.png" alt="Foundation Level Threat Intelligence Analyst certificate" loading="lazy">
+                  <img src="assets/img/portof/ftia.webp" alt="Foundation Level Threat Intelligence Analyst certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Foundation Level Threat Intelligence Analyst</h4>
@@ -235,7 +250,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/27001.png" alt="ISO/IEC 27001:2022 Information Security Associate certificate" loading="lazy">
+                  <img src="assets/img/portof/27001.webp" alt="ISO/IEC 27001:2022 Information Security Associate certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>ISO/IEC 27001:2022 Information Security Associate</h4>
@@ -247,7 +262,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/cnsp.png" alt="Certified Network Security Practitioner with Merit certificate" loading="lazy">
+                  <img src="assets/img/portof/cnsp.webp" alt="Certified Network Security Practitioner with Merit certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Network Security Practitioner (CNSP) with Merit</h4>
@@ -259,7 +274,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/ccp.png" alt="AWS Certified Cloud Practitioner certificate" loading="lazy">
+                  <img src="assets/img/portof/ccp.webp" alt="AWS Certified Cloud Practitioner certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>AWS Certified Cloud Practitioner (AWS-CCP)</h4>
@@ -271,7 +286,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/c3sa.png" alt="Certified Cyber Security Analyst certificate" loading="lazy">
+                  <img src="assets/img/portof/c3sa.webp" alt="Certified Cyber Security Analyst certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Cyber Security Analyst (C3SA)</h4>
@@ -283,7 +298,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/oracle2.png" alt="Oracle Guided Learning Content Developer certificate" loading="lazy">
+                  <img src="assets/img/portof/oracle2.webp" alt="Oracle Guided Learning Content Developer certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Oracle Guided Learning Content Developer Certified Foundations Associate - Rel 2</h4>
@@ -295,7 +310,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/casf.png" alt="Certified Associate in Scrum Fundamentals certificate" loading="lazy">
+                  <img src="assets/img/portof/casf.webp" alt="Certified Associate in Scrum Fundamentals certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Associate in Scrum Fundamentals (CASF)</h4>
@@ -307,7 +322,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/apisec.png" alt="APIsec Certified Practitioner certificate" loading="lazy">
+                  <img src="assets/img/portof/apisec.webp" alt="APIsec Certified Practitioner certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>APIsec Certified Practitioner</h4>
@@ -319,7 +334,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/cap.png" alt="Certified AppSec Practitioner v2 with Merit certificate" loading="lazy">
+                  <img src="assets/img/portof/cap.webp" alt="Certified AppSec Practitioner v2 with Merit certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified AppSec Practitioner v2 (CAP) with Merit</h4>
@@ -339,6 +354,7 @@
       </div>
     </section>
 
+    <!-- Badges Section -->
     <section id="badges" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Badges</h2>
@@ -349,7 +365,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/apisec.png" class="certification-badge-img" alt="APISec Certified Practitioner badge" loading="lazy">
+                <img src="assets/img/badge/apisec.webp" class="certification-badge-img" alt="APISec Certified Practitioner badge" loading="lazy">
               </div>
               <h4>APISec Certified Practitioner</h4>
               <p class="fst-italic"></p>
@@ -359,7 +375,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/lfd.png" class="certification-badge-img" alt="LFD121 Developing Secure Software badge" loading="lazy">
+                <img src="assets/img/badge/lfd.webp" class="certification-badge-img" alt="LFD121 Developing Secure Software badge" loading="lazy">
               </div>
               <h4>LFD121: Developing Secure Software</h4>
               <p class="fst-italic"></p>
@@ -369,7 +385,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/icip.png" class="certification-badge-img" alt="OPSWAT ICIP badge" loading="lazy">
+                <img src="assets/img/badge/icip.webp" class="certification-badge-img" alt="OPSWAT ICIP badge" loading="lazy">
               </div>
               <h4>OPSWAT Introduction to Critical Infrastructure Protection (ICIP)</h4>
               <p class="fst-italic"></p>
@@ -379,7 +395,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/fcf.png" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity badge" loading="lazy">
+                <img src="assets/img/badge/fcf.webp" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity badge" loading="lazy">
               </div>
               <h4>Fortinet Certified Fundamentals Cybersecurity</h4>
               <p class="fst-italic"></p>
@@ -389,7 +405,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/capc.png" class="certification-badge-img" alt="CAPC badge" loading="lazy">
+                <img src="assets/img/badge/capc.webp" class="certification-badge-img" alt="CAPC badge" loading="lazy">
               </div>
               <h4>Cybersecurity Awareness Professional Certification - CAPC</h4>
               <p class="fst-italic"></p>
@@ -399,7 +415,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/ccp.png" class="certification-badge-img" alt="AWS Certified Cloud Practitioner badge" loading="lazy">
+                <img src="assets/img/badge/ccp.webp" class="certification-badge-img" alt="AWS Certified Cloud Practitioner badge" loading="lazy">
               </div>
               <h4>AWS Certified Cloud Practitioner</h4>
               <p class="fst-italic"></p>
@@ -437,18 +453,19 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
+  <!-- JavaScript - All deferred for better performance -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
