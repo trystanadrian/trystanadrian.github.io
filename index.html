@@ -4,9 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Trystan Adrian - Portfolio</title>
+  <title>Trystan Adrian - Cybersecurity Portfolio</title>
   <meta content="Personal portfolio of Trystan Adrian showcasing skills in cybersecurity, development, and professional certifications." name="description">
-  <meta content="Trystan Adrian, Cybersecurity, Portfolio, Certifications, Projects" name="keywords">
+  <meta content="Trystan Adrian, Cybersecurity, Portfolio, Certifications, Projects, Bug Hunting, Penetration Testing" name="keywords">
+  <meta name="author" content="Trystan Adrian">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Trystan Adrian - Cybersecurity Portfolio">
+  <meta property="og:description" content="Cybersecurity enthusiast specializing in penetration testing and bug hunting">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="https://yourwebsite.com/assets/img/profile-img.jpg">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trystan Adrian - Cybersecurity Portfolio">
+  <meta name="twitter:description" content="Cybersecurity enthusiast specializing in penetration testing and bug hunting">
+  <meta name="twitter:image" content="https://yourwebsite.com/assets/img/profile-img.jpg">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -30,7 +44,7 @@
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
@@ -46,24 +60,26 @@
 
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="">
+      <img src="assets/img/hero-bg.jpg" alt="Hero background pattern" loading="lazy">
 
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Trystan Adrian</h2>
-            <p>I'm <span class="typed" data-typed-items="Learner, Cybersecurity Enthusiast">Learner</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p>I'm <span class="typed" data-typed-items="Learner, Cybersecurity Enthusiast, Bug Hunter, Penetration Tester">Learner</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="mailto:trystanadrian96@gmail.com"><i class="bi bi-envelope"></i></a>
-              <a href="https://medium.com/@trystanadrian"><i class="bi bi-medium"></i></a>
-              <a href="https://www.instagram.com/trystanahw/"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/trystanahw/"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:trystanadrian96@gmail.com" aria-label="Email Trystan Adrian"><i class="bi bi-envelope"></i></a>
+              <a href="https://medium.com/@trystanadrian" target="_blank" rel="noopener noreferrer" aria-label="Visit Medium profile"><i class="bi bi-medium"></i></a>
+              <a href="https://www.instagram.com/trystanahw/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/trystanahw/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
       </div>
 
-    </section><section id="about" class="about section">
+    </section>
+
+    <section id="about" class="about section">
 
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
@@ -74,7 +90,7 @@
           <div class="col-lg-7 content order-lg-1 pe-lg-5">
             <h1>Trystan Adrian Hanggara Wibawa</h1>
             <p class="fst-italic py-3">
-              Hi! I'm currently studying IT with a focus on cybersecurity and penetration testing. I enjoy hunting bugs and learning new exploit techniques. When I’m not in front of a screen, I’m probably playing football or just enjoying the day with good music.
+              Hi! I'm currently studying IT with a focus on cybersecurity and penetration testing. I enjoy hunting bugs and learning new exploit techniques. When I'm not in front of a screen, I'm probably playing football or just enjoying the day with good music.
             </p>
 
             <div class="main-interest-container mt-4">
@@ -94,16 +110,18 @@
           </div>
           <div class="col-lg-5 order-lg-2 text-center">
             <div id="about-image-slideshow" class="about-image-slideshow">
-              <img src="assets/img/profile-img.jpg" class="img-fluid active" alt="Foto Profil 1">
-              <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="Foto Profil 2">
-              <img src="assets/img/profile-img-3.jpg" class="img-fluid" alt="Foto Profil 3">
-              <img src="assets/img/profile-img-4.jpg" class="img-fluid" alt="Foto Profil 4">
+              <img src="assets/img/profile-img.jpg" class="img-fluid active" alt="Trystan Adrian profile photo" loading="lazy">
+              <img src="assets/img/profile-img-2.jpg" class="img-fluid" alt="Trystan Adrian professional photo" loading="lazy">
+              <img src="assets/img/profile-img-3.jpg" class="img-fluid" alt="Trystan Adrian portrait" loading="lazy">
+              <img src="assets/img/profile-img-4.jpg" class="img-fluid" alt="Trystan Adrian casual photo" loading="lazy">
             </div>
           </div>
         </div>
       </div>
 
-    </section><section id="stats" class="stats section">
+    </section>
+
+    <section id="stats" class="stats section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
 
@@ -130,7 +148,9 @@
           </div>
         </div>
       </div>
-    </section><section id="projects" class="projects section">
+    </section>
+
+    <section id="projects" class="projects section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Writings & Projects</h2>
       </div>
@@ -178,7 +198,9 @@
 
         </div>
       </div>
-    </section><section id="portfolio" class="certifications-slider-section section">
+    </section>
+
+    <section id="portfolio" class="certifications-slider-section section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
       </div>
@@ -189,7 +211,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\nasa.png" alt="National Aeronautics and Space Administration (NASA) Hall of Fame">
+                  <img src="assets/img/portof/nasa.png" alt="NASA Hall of Fame certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>National Aeronautics and Space Administration (NASA) Hall of Fame</h4>
@@ -201,10 +223,10 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/ftia.png" alt="Foundation Level Threat intelligence Analyst Badge">
+                  <img src="assets/img/portof/ftia.png" alt="Foundation Level Threat Intelligence Analyst certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
-                  <h4>Foundation Level Threat intelligence Analyst</h4>
+                  <h4>Foundation Level Threat Intelligence Analyst</h4>
                   <p>Issued by arcX · May 2024 · Credential ID: cb71b23b69480d366d469dc457b49d07cbecc49a</p>
                 </div>
               </div>
@@ -213,7 +235,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/27001.png" alt="ISO/IEC 27001:2022 Information Security Associate Badge">
+                  <img src="assets/img/portof/27001.png" alt="ISO/IEC 27001:2022 Information Security Associate certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>ISO/IEC 27001:2022 Information Security Associate</h4>
@@ -221,10 +243,11 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets/img/portof/cnsp.png" alt="Certified Network Security Practitioner (CNSP) with Merit Badge">
+                  <img src="assets/img/portof/cnsp.png" alt="Certified Network Security Practitioner with Merit certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Network Security Practitioner (CNSP) with Merit</h4>
@@ -236,7 +259,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\ccp.png" alt="AWS Certified Cloud Practitioner (AWS-CCP) Badge">
+                  <img src="assets/img/portof/ccp.png" alt="AWS Certified Cloud Practitioner certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>AWS Certified Cloud Practitioner (AWS-CCP)</h4>
@@ -248,7 +271,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\c3sa.png" alt="Certified Cyber Security Analyst (C3SA) Badge">
+                  <img src="assets/img/portof/c3sa.png" alt="Certified Cyber Security Analyst certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Cyber Security Analyst (C3SA)</h4>
@@ -260,7 +283,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\oracle2.png" alt="Oracle Guided Learning Content Developer Certified Foundations Associate Badge">
+                  <img src="assets/img/portof/oracle2.png" alt="Oracle Guided Learning Content Developer certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Oracle Guided Learning Content Developer Certified Foundations Associate - Rel 2</h4>
@@ -272,7 +295,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\casf.png" alt="Certified Associate in Scrum Fundamentals (CASF) Badge">
+                  <img src="assets/img/portof/casf.png" alt="Certified Associate in Scrum Fundamentals certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified Associate in Scrum Fundamentals (CASF)</h4>
@@ -284,7 +307,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\apisec.png" alt="APIsec Certified Practitioner Badge">
+                  <img src="assets/img/portof/apisec.png" alt="APIsec Certified Practitioner certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>APIsec Certified Practitioner</h4>
@@ -296,7 +319,7 @@
             <div class="swiper-slide">
               <div class="certification-slide-item">
                 <div class="certification-image-wrapper">
-                  <img src="assets\img\portof\cap.png" alt="Certified AppSec Practitioner v2 (CAP) with Merit Badge">
+                  <img src="assets/img/portof/cap.png" alt="Certified AppSec Practitioner v2 with Merit certificate" loading="lazy">
                 </div>
                 <div class="certification-details">
                   <h4>Certified AppSec Practitioner v2 (CAP) with Merit</h4>
@@ -305,16 +328,18 @@
               </div>
             </div>
             
-            </div>
+          </div>
           <div class="swiper-pagination"></div>
           
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev" aria-label="Previous certification"></div>
+          <div class="swiper-button-next" aria-label="Next certification"></div>
 
         </div>
         
-        </div>
-    </section><section id="badges" class="services section">
+      </div>
+    </section>
+
+    <section id="badges" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Badges</h2>
       </div>
@@ -324,52 +349,57 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/apisec.png" class="certification-badge-img" alt="APISec Certified Practitioner Badge">
+                <img src="assets/img/badge/apisec.png" class="certification-badge-img" alt="APISec Certified Practitioner badge" loading="lazy">
               </div>
               <h4>APISec Certified Practitioner</h4>
               <p class="fst-italic"></p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/lfd.png" class="certification-badge-img" alt="LFD121 Developing Secure Software Badge">
+                <img src="assets/img/badge/lfd.png" class="certification-badge-img" alt="LFD121 Developing Secure Software badge" loading="lazy">
               </div>
               <h4>LFD121: Developing Secure Software</h4>
               <p class="fst-italic"></p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/icip.png" class="certification-badge-img" alt="OPSWAT ICIP Badge">
+                <img src="assets/img/badge/icip.png" class="certification-badge-img" alt="OPSWAT ICIP badge" loading="lazy">
               </div>
               <h4>OPSWAT Introduction to Critical Infrastructure Protection (ICIP)</h4>
               <p class="fst-italic"></p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/fcf.png" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity Badge">
+                <img src="assets/img/badge/fcf.png" class="certification-badge-img" alt="Fortinet Certified Fundamentals Cybersecurity badge" loading="lazy">
               </div>
               <h4>Fortinet Certified Fundamentals Cybersecurity</h4>
               <p class="fst-italic"></p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/capc.png" class="certification-badge-img" alt="CAPC Badge">
+                <img src="assets/img/badge/capc.png" class="certification-badge-img" alt="CAPC badge" loading="lazy">
               </div>
               <h4>Cybersecurity Awareness Professional Certification - CAPC</h4>
               <p class="fst-italic"></p>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="certification-item text-center">
               <div class="certification-badge-img-wrapper">
-                <img src="assets/img/badge/ccp.png" class="certification-badge-img" alt="AWS Certified Cloud Practitioner Badge">
+                <img src="assets/img/badge/ccp.png" class="certification-badge-img" alt="AWS Certified Cloud Practitioner badge" loading="lazy">
               </div>
               <h4>AWS Certified Cloud Practitioner</h4>
               <p class="fst-italic"></p>
@@ -379,22 +409,24 @@
 
         <div class="text-center mt-5 pt-3">
           <a href="https://www.credly.com/users/trystanahw/badges" class="btn btn-primary btn-lg btn-view-all-credly" target="_blank" rel="noopener noreferrer">
-            View All Badges<i class="bi bi-box-arrow-up-right"></i>
+            View All Badges <i class="bi bi-box-arrow-up-right"></i>
           </a>
         </div>
 
       </div>
-    </section></main>
+    </section>
+
+  </main>
 
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <h3 class="sitename">Trystan Adrian</h3>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.credly.com/users/trystanahw/"><i class="bi bi-c-circle-fill"></i></a>
-        <a href="https://github.com/trystanadrian"><i class="bi bi-github"></i></a>
-        <a href="https://www.instagram.com/trystanahw/"><i class="bi bi-instagram"></i></a>
-        <a href="https://medium.com/@trystanadrian"><i class="bi bi-medium"></i></a>
-        <a href="https://www.linkedin.com/in/trystanahw/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.credly.com/users/trystanahw/" target="_blank" rel="noopener noreferrer" aria-label="Visit Credly profile"><i class="bi bi-c-circle-fill"></i></a>
+        <a href="https://github.com/trystanadrian" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/trystanahw/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile"><i class="bi bi-instagram"></i></a>
+        <a href="https://medium.com/@trystanadrian" target="_blank" rel="noopener noreferrer" aria-label="Visit Medium profile"><i class="bi bi-medium"></i></a>
+        <a href="https://www.linkedin.com/in/trystanahw/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="copyright">
         <strong class="px-1 sitename">2025</strong> <span>All Rights Reserved</span>
@@ -402,7 +434,7 @@
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
